@@ -1,13 +1,13 @@
-# Random
-var n = 1000001;
+
+var n = 1; //1000001
 function flip() {
 	  return Math.random() >= 0.5;	 
 	}
 
 	function randomNumber(n) {
 		try {	  
-	  if(n <= 0) throw n+" must be greater than 0";
-	  if(n > 1000000) throw "n must be less than 1,000,000";
+	  
+	  if(n > 1000000) throw "Error";
 	  if(n === 1) return 0;
 	  
 	
@@ -32,10 +32,11 @@ function flip() {
 		}
 		catch(err) {
 			if (r==undefined){
-				document.write("Error: "+err);
-				r=0;
+				console.log(err);
+				r===0;
 			}			
 		}
 	}
-	
-	document.write("Value of n= "+n +" Ouput: "+randomNumber(n));
+	var end =randomNumber(n);
+	if(end!=undefined)
+	console.log(randomNumber(n));
