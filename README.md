@@ -1,5 +1,5 @@
 
-var n = 1; //1000001
+var n = 500; //1000001
 function flip() {
 	  return Math.random() >= 0.5;	 
 	}
